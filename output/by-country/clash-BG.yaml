@@ -6,28 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - dongge
   type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 02 - dongge
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 03 - dongge
-  type: vless
   server: 94.156.155.27
   port: 443
   uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
@@ -38,37 +16,15 @@ proxies:
     public-key: bY0-zlTOPCaEWDMw_BTzuzJW513tl6Hc61n4Z-q1cHE
   servername: www.telekom.de
   client-fingerprint: firefox
-- name: 🇧🇬 BG 04 - dongge
+- name: 🇧🇬 BG 02 - dongge
   type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 192.145.31.5
-- name: 🇧🇬 BG 05 - dongge
-  type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 06 - dongge
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,10 +32,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 BG 01 - dongge
   - 🇧🇬 BG 02 - dongge
-  - 🇧🇬 BG 03 - dongge
-  - 🇧🇬 BG 04 - dongge
-  - 🇧🇬 BG 05 - dongge
-  - 🇧🇬 BG 06 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,9 +39,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 BG 01 - dongge
   - 🇧🇬 BG 02 - dongge
-  - 🇧🇬 BG 03 - dongge
-  - 🇧🇬 BG 04 - dongge
-  - 🇧🇬 BG 05 - dongge
-  - 🇧🇬 BG 06 - dongge
 rules:
 - MATCH,PROXIES
