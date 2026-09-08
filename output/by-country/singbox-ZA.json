@@ -6,18 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 ZA 01 - xiaohe",
-        "🇿🇦 ZA 02 - xiaohe",
-        "🇿🇦 ZA 03 - xiaohe"
+        "🇿🇦 ZA 01 - dongge",
+        "🇿🇦 ZA 02 - dongge",
+        "🇿🇦 ZA 03 - dongge",
+        "🇿🇦 ZA 04 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 ZA 01 - xiaohe",
-        "🇿🇦 ZA 02 - xiaohe",
-        "🇿🇦 ZA 03 - xiaohe"
+        "🇿🇦 ZA 01 - dongge",
+        "🇿🇦 ZA 02 - dongge",
+        "🇿🇦 ZA 03 - dongge",
+        "🇿🇦 ZA 04 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },

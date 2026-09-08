@@ -4,7 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 BR 01 - xiaohe
+- name: 🇧🇷 BR 01 - dongge
+  type: vless
+  server: 172.64.229.185
+  port: 443
+  uuid: 7b1897ec-afb5-425c-afbf-d79634b6b317
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: br-gru.xhs152.shop
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: br-gru.xhs152.shop
+- name: 🇧🇷 BR 02 - dongge
   type: ss
   server: 216.128.168.190
   port: 8388
@@ -16,12 +30,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 BR 01 - xiaohe
+  - 🇧🇷 BR 01 - dongge
+  - 🇧🇷 BR 02 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 BR 01 - xiaohe
+  - 🇧🇷 BR 01 - dongge
+  - 🇧🇷 BR 02 - dongge
 rules:
 - MATCH,PROXIES
