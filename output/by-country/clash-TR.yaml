@@ -15,12 +15,42 @@ proxies:
   reality-opts:
     public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - dongge
   type: vless
-  server: 206.1.96.228
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
+  server: 162.159.91.222
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
+    headers:
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 03 - dongge
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: index.harmonica01.workers.dev
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: index.harmonica01.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 04 - dongge
+  type: vmess
+  server: pori.cjlife.ir
+  port: 110
+  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -31,6 +61,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - dongge
   - 🇹🇷 土耳其 (Turkey) 02 - dongge
+  - 🇹🇷 土耳其 (Turkey) 03 - dongge
+  - 🇹🇷 土耳其 (Turkey) 04 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +70,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - dongge
   - 🇹🇷 土耳其 (Turkey) 02 - dongge
+  - 🇹🇷 土耳其 (Turkey) 03 - dongge
+  - 🇹🇷 土耳其 (Turkey) 04 - dongge
 rules:
 - MATCH,PROXIES
