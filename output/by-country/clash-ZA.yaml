@@ -13,10 +13,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 02 - dongge
   type: ss
-  server: 20.164.211.25
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 03 - dongge
   type: ss
@@ -24,6 +24,20 @@ proxies:
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 04 - dongge
+  type: ss
+  server: 20.164.211.25
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: BhYMkBpjAjE6ixSw
+  udp: true
+- name: 🇿🇦 ZA 05 - dongge
+  type: ss
+  server: 20.164.211.25
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: BhYMkBpjAjE6ixSw
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -33,6 +47,8 @@ proxy-groups:
   - 🇿🇦 ZA 01 - dongge
   - 🇿🇦 ZA 02 - dongge
   - 🇿🇦 ZA 03 - dongge
+  - 🇿🇦 ZA 04 - dongge
+  - 🇿🇦 ZA 05 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +57,7 @@ proxy-groups:
   - 🇿🇦 ZA 01 - dongge
   - 🇿🇦 ZA 02 - dongge
   - 🇿🇦 ZA 03 - dongge
+  - 🇿🇦 ZA 04 - dongge
+  - 🇿🇦 ZA 05 - dongge
 rules:
 - MATCH,PROXIES

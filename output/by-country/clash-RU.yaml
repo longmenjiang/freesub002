@@ -19,41 +19,6 @@ proxies:
     headers:
       Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 02 - dongge
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - dongge
-  type: vless
-  server: ru05.abvpn.ru
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ru05.abvpn.ru
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 04 - dongge
-  type: vless
-  server: ru05.abvpn.ru
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ru05.abvpn.ru
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 05 - dongge
   type: vless
   server: 45.9.15.206
   port: 443
@@ -67,7 +32,14 @@ proxies:
     path: /websocket
     headers:
       Host: 45.9.15.206
-- name: 🇷🇺 俄罗斯 (Russia) 06 - dongge
+- name: 🇷🇺 俄罗斯 (Russia) 03 - dongge
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - dongge
   type: vless
   server: 46.8.200.91
   port: 443
@@ -90,8 +62,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - dongge
   - 🇷🇺 俄罗斯 (Russia) 03 - dongge
   - 🇷🇺 俄罗斯 (Russia) 04 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 05 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 06 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,7 +71,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - dongge
   - 🇷🇺 俄罗斯 (Russia) 03 - dongge
   - 🇷🇺 俄罗斯 (Russia) 04 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 05 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 06 - dongge
 rules:
 - MATCH,PROXIES
