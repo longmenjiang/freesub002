@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - dongge"
+        "🇵🇭 PH 01 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - dongge"
+        "🇵🇭 PH 01 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
