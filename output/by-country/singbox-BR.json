@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 DK 01 - dongge"
+        "🇧🇷 BR 01 - dongge",
+        "🇧🇷 BR 02 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 DK 01 - dongge"
+        "🇧🇷 BR 01 - dongge",
+        "🇧🇷 BR 02 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
