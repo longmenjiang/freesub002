@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - dongge"
+        "🇷🇺 俄罗斯 (Russia) 01 - dongge",
+        "🇷🇺 俄罗斯 (Russia) 02 - dongge",
+        "🇷🇺 俄罗斯 (Russia) 03 - dongge",
+        "🇷🇺 俄罗斯 (Russia) 04 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - dongge"
+        "🇷🇺 俄罗斯 (Russia) 01 - dongge",
+        "🇷🇺 俄罗斯 (Russia) 02 - dongge",
+        "🇷🇺 俄罗斯 (Russia) 03 - dongge",
+        "🇷🇺 俄罗斯 (Russia) 04 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
