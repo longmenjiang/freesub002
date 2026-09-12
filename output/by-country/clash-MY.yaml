@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - dongge
+  type: vless
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /db55c40bbc75
+    headers:
+      Host: 38.60.168.98
+- name: 🇲🇾 MY 02 - dongge
   type: vmess
   server: 47.250.45.234
   port: 43063
@@ -16,45 +29,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki?ed=2048
+    path: /arki
     headers:
-      Host: ''
-- name: 🇲🇾 MY 02 - dongge
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇾 MY 03 - dongge
-  type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /db55c40bbc75
-    headers:
-      Host: 38.60.168.98
-- name: 🇲🇾 MY 04 - dongge
-  type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /db55c40bbc75
-    headers:
-      Host: 38.60.168.98
+      Host: 47.250.45.234
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - dongge
   - 🇲🇾 MY 02 - dongge
-  - 🇲🇾 MY 03 - dongge
-  - 🇲🇾 MY 04 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - dongge
   - 🇲🇾 MY 02 - dongge
-  - 🇲🇾 MY 03 - dongge
-  - 🇲🇾 MY 04 - dongge
 rules:
 - MATCH,PROXIES
