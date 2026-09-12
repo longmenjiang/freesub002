@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - dongge",
-        "🇮🇳 印度 (India) 02 - dongge"
+        "🇮🇳 印度 (India) 01 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - dongge",
-        "🇮🇳 印度 (India) 02 - dongge"
+        "🇮🇳 印度 (India) 01 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
