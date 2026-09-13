@@ -6,21 +6,22 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - dongge
   type: vless
-  server: 162.159.38.127
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 8.6.112.9
+  port: 443
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
 - name: 🇨🇿 CZ 02 - dongge
   type: vless
-  server: 104.18.39.218
-  port: 80
+  server: 172.64.42.85
+  port: 2082
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -30,6 +31,33 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 03 - dongge
+  type: vless
+  server: 104.21.78.225
+  port: 443
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+- name: 🇨🇿 CZ 04 - dongge
+  type: vless
+  server: 172.64.229.2
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +65,8 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - dongge
   - 🇨🇿 CZ 02 - dongge
+  - 🇨🇿 CZ 03 - dongge
+  - 🇨🇿 CZ 04 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +74,7 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - dongge
   - 🇨🇿 CZ 02 - dongge
+  - 🇨🇿 CZ 03 - dongge
+  - 🇨🇿 CZ 04 - dongge
 rules:
 - MATCH,PROXIES
