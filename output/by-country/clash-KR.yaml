@@ -15,13 +15,33 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 02 - dongge
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 03 - dongge
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - dongge
   type: ss
   server: 141.164.45.187
-  port: 5498
+  port: 2376
   cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
+  password: faBAoD54k87UJG7
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 03 - dongge
+- name: 🇰🇷 韩国 (South Korea) 05 - dongge
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -33,20 +53,6 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 04 - dongge
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 - dongge
-  type: ss
-  server: 141.164.45.187
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
 - name: 🇰🇷 韩国 (South Korea) 06 - dongge
   type: ss
   server: 141.164.45.187
@@ -57,9 +63,9 @@ proxies:
 - name: 🇰🇷 韩国 (South Korea) 07 - dongge
   type: ss
   server: 141.164.45.187
-  port: 6697
+  port: 7002
   cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  password: RexnBgU7EV5ADxG
   udp: true
 proxy-groups:
 - name: PROXIES
