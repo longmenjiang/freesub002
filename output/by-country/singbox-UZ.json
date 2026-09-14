@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 UZ 01 - dongge"
+        "🇺🇿 UZ 01 - dongge",
+        "🇺🇿 UZ 02 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 UZ 01 - dongge"
+        "🇺🇿 UZ 01 - dongge",
+        "🇺🇿 UZ 02 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
