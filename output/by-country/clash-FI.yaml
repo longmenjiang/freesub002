@@ -20,55 +20,6 @@ proxies:
       Host: c12.com
 - name: 🇫🇮 FI 02 - dongge
   type: vless
-  server: 193.29.225.249
-  port: 4443
-  uuid: d0dd16f2-81b4-4892-933e-040856457242
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇫🇮 FI 03 - dongge
-  type: ss
-  server: 65.109.215.118
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
-  udp: true
-- name: 🇫🇮 FI 04 - dongge
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 05 - dongge
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kayko.global.ssl.fastly.net
-- name: 🇫🇮 FI 06 - dongge
-  type: vless
   server: 151.101.56.6
   port: 443
   uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
@@ -81,6 +32,25 @@ proxies:
     path: //---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
     headers:
       Host: c12.com
+- name: 🇫🇮 FI 03 - dongge
+  type: ss
+  server: 65.109.215.118
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
+- name: 🇫🇮 FI 04 - dongge
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,8 +60,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - dongge
   - 🇫🇮 FI 03 - dongge
   - 🇫🇮 FI 04 - dongge
-  - 🇫🇮 FI 05 - dongge
-  - 🇫🇮 FI 06 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,7 +69,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - dongge
   - 🇫🇮 FI 03 - dongge
   - 🇫🇮 FI 04 - dongge
-  - 🇫🇮 FI 05 - dongge
-  - 🇫🇮 FI 06 - dongge
 rules:
 - MATCH,PROXIES
