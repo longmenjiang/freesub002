@@ -6,29 +6,45 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - dongge
   type: vless
-  server: 104.17.148.22
-  port: 2053
-  uuid: 401d950d-4f5c-45c7-bf44-8b69acf35f6f
+  server: 129.151.64.169
+  port: 31867
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 7X70yyvt7EQOTx-iq9N3rjt1xN1jWKH9.aSDfsAfDSAF.WOrKerS.dev
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiU2RJd1dRWkd6IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
+    path: /files
     headers:
-      Host: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
+      Host: cdn8848.776676.xyz
+- name: 🇮🇶 IQ 02 - dongge
+  type: vless
+  server: 64.227.67.161
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - dongge
+  - 🇮🇶 IQ 02 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - dongge
+  - 🇮🇶 IQ 02 - dongge
 rules:
 - MATCH,PROXIES
