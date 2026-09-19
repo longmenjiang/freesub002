@@ -6,45 +6,28 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - dongge
   type: vless
-  server: 172.67.151.77
-  port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nahan-core.fatitelegram.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.fatitelegram.workers.dev
-- name: 🇺🇸 美国 (United States) 02 (家宽) - dongge
-  type: vless
-  server: 104.18.7.162
-  port: 443
+  server: 162.159.24.131
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 7bzzv.umtm.n70.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /?ed=2560security=tls+
     headers:
-      Host: 7bzzv.umtm.n70.hh.vavava.kdns.fr
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - dongge
-  - 🇺🇸 美国 (United States) 02 (家宽) - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - dongge
-  - 🇺🇸 美国 (United States) 02 (家宽) - dongge
 rules:
 - MATCH,PROXIES

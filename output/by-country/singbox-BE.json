@@ -6,28 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 BE 01 - dongge",
-        "🇧🇪 BE 02 - dongge",
-        "🇧🇪 BE 03 - dongge",
-        "🇧🇪 BE 04 - dongge",
-        "🇧🇪 BE 05 - dongge",
-        "🇧🇪 BE 06 - dongge",
-        "🇧🇪 BE 07 - dongge",
-        "🇧🇪 BE 08 - dongge"
+        "🇧🇪 BE 01 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 BE 01 - dongge",
-        "🇧🇪 BE 02 - dongge",
-        "🇧🇪 BE 03 - dongge",
-        "🇧🇪 BE 04 - dongge",
-        "🇧🇪 BE 05 - dongge",
-        "🇧🇪 BE 06 - dongge",
-        "🇧🇪 BE 07 - dongge",
-        "🇧🇪 BE 08 - dongge"
+        "🇧🇪 BE 01 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
