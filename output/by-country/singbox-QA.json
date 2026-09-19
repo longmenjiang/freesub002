@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇿 BZ 01 - dongge"
+        "🇶🇦 QA 01 - dongge",
+        "🇶🇦 QA 02 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇿 BZ 01 - dongge"
+        "🇶🇦 QA 01 - dongge",
+        "🇶🇦 QA 02 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
