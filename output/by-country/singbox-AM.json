@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL 01 - dongge"
+        "🇦🇲 AM 01 - dongge",
+        "🇦🇲 AM 02 - dongge",
+        "🇦🇲 AM 03 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL 01 - dongge"
+        "🇦🇲 AM 01 - dongge",
+        "🇦🇲 AM 02 - dongge",
+        "🇦🇲 AM 03 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
