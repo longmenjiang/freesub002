@@ -6,47 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - dongge
   type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 146.75.119.82
+  port: 80
+  uuid: 47dee644-2f74-466e-b35a-195f5faa7c31
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: rb24.ir
 - name: 🇫🇮 FI 02 - dongge
-  type: vless
-  server: 212.104.128.152
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 03 - dongge
-  type: vless
-  server: 212.104.128.106
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 04 - dongge
   type: vless
   server: 212.104.128.217
   port: 443
@@ -60,7 +31,49 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 03 - dongge
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 9503e890-3702-4847-af0a-2bceac2f0da0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM-TOOTFFARANGI
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 04 - dongge
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: ac3ef9c7-5732-4726-e7c6-3c73703987c7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
 - name: 🇫🇮 FI 05 - dongge
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 9503e890-3702-4847-af0a-2bceac2f0da0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 06 - dongge
   type: vless
   server: 212.104.128.68
   port: 443
@@ -71,26 +84,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 06 - dongge
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 07 - dongge
   type: vless
-  server: 212.104.128.139
+  server: 212.104.128.27
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -99,12 +98,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 08 - dongge
   type: vless
-  server: 212.104.128.106
+  server: 212.104.128.206
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -118,7 +117,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 09 - dongge
   type: vless
-  server: 212.104.128.27
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -146,21 +145,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 11 - dongge
   type: vless
-  server: 172.64.53.194
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 212.104.128.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 12 - dongge
   type: vless
-  server: 212.104.128.206
+  server: 212.104.128.139
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -173,22 +172,15 @@ proxies:
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 13 - dongge
-  type: vless
-  server: 212.104.128.152
+  type: ss
+  server: 87.58.148.70
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  cipher: aes-256-gcm
+  password: rg0g3xp9rk9nk9o0
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 14 - dongge
   type: vless
-  server: 212.104.128.0
+  server: 212.104.128.27
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -202,7 +194,105 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 15 - dongge
   type: vless
+  server: 212.104.128.45
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 16 - dongge
+  type: vless
+  server: 212.104.128.152
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 17 - dongge
+  type: vless
   server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 18 - dongge
+  type: vless
+  server: 212.104.128.0
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 19 - dongge
+  type: vless
+  server: 212.104.128.45
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 20 - dongge
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 9503e890-3702-4847-af0a-2bceac2f0da0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 21 - dongge
+  type: vless
+  server: 212.104.128.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 22 - dongge
+  type: vless
+  server: 212.104.128.152
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -234,6 +324,13 @@ proxy-groups:
   - 🇫🇮 FI 13 - dongge
   - 🇫🇮 FI 14 - dongge
   - 🇫🇮 FI 15 - dongge
+  - 🇫🇮 FI 16 - dongge
+  - 🇫🇮 FI 17 - dongge
+  - 🇫🇮 FI 18 - dongge
+  - 🇫🇮 FI 19 - dongge
+  - 🇫🇮 FI 20 - dongge
+  - 🇫🇮 FI 21 - dongge
+  - 🇫🇮 FI 22 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -254,5 +351,12 @@ proxy-groups:
   - 🇫🇮 FI 13 - dongge
   - 🇫🇮 FI 14 - dongge
   - 🇫🇮 FI 15 - dongge
+  - 🇫🇮 FI 16 - dongge
+  - 🇫🇮 FI 17 - dongge
+  - 🇫🇮 FI 18 - dongge
+  - 🇫🇮 FI 19 - dongge
+  - 🇫🇮 FI 20 - dongge
+  - 🇫🇮 FI 21 - dongge
+  - 🇫🇮 FI 22 - dongge
 rules:
 - MATCH,PROXIES
