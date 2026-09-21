@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - dongge"
+        "🇮🇶 IQ 01 - dongge",
+        "🇮🇶 IQ 02 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - dongge"
+        "🇮🇶 IQ 01 - dongge",
+        "🇮🇶 IQ 02 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
