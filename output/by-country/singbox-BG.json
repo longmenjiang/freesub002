@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG 01 - dongge"
+        "🇧🇬 BG 01 - dongge",
+        "🇧🇬 BG 02 - dongge",
+        "🇧🇬 BG 03 - dongge",
+        "🇧🇬 BG 04 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG 01 - dongge"
+        "🇧🇬 BG 01 - dongge",
+        "🇧🇬 BG 02 - dongge",
+        "🇧🇬 BG 03 - dongge",
+        "🇧🇬 BG 04 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },

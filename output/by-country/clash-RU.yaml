@@ -6,22 +6,22 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - dongge
   type: vless
-  server: 202.181.177.8
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 46.8.200.91
+  port: 443
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /channels/act
+    path: /cdn/v3/live
     headers:
-      Host: cdn8848.776676.xyz
+      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 02 - dongge
   type: vless
-  server: 188.166.49.168
-  port: 2083
+  server: 31.59.121.156
+  port: 2053
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -34,8 +34,8 @@ proxies:
       Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 03 - dongge
   type: vless
-  server: 185.113.223.183
-  port: 8443
+  server: 138.68.142.165
+  port: 2053
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -43,7 +43,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /channels/act
+    path: /resource/channel
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
