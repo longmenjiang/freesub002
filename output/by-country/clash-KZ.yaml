@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - dongge
   type: vless
-  server: kz3.zuoai.cf
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 02 - dongge
-  type: vless
   server: 31.43.179.200
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -29,7 +15,21 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 02 - dongge
+  type: vless
+  server: 31.43.179.25
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 03 - dongge
@@ -48,7 +48,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 04 - dongge
   type: vless
-  server: 31.43.179.25
+  server: 31.43.179.137
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -62,7 +62,119 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 05 - dongge
   type: vless
+  server: 31.43.179.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 06 - dongge
+  type: vless
+  server: 31.43.179.170
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 07 - dongge
+  type: vless
+  server: 31.43.179.200
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 08 - dongge
+  type: vless
+  server: 31.43.179.25
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 09 - dongge
+  type: vless
+  server: 31.43.179.8
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 10 - dongge
+  type: vless
   server: 31.43.179.20
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 11 - dongge
+  type: vless
+  server: 31.43.179.87
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 12 - dongge
+  type: vless
+  server: 31.43.179.36
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 13 - dongge
+  type: vless
+  server: 31.43.179.109
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -84,6 +196,14 @@ proxy-groups:
   - 🇰🇿 KZ 03 - dongge
   - 🇰🇿 KZ 04 - dongge
   - 🇰🇿 KZ 05 - dongge
+  - 🇰🇿 KZ 06 - dongge
+  - 🇰🇿 KZ 07 - dongge
+  - 🇰🇿 KZ 08 - dongge
+  - 🇰🇿 KZ 09 - dongge
+  - 🇰🇿 KZ 10 - dongge
+  - 🇰🇿 KZ 11 - dongge
+  - 🇰🇿 KZ 12 - dongge
+  - 🇰🇿 KZ 13 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +214,13 @@ proxy-groups:
   - 🇰🇿 KZ 03 - dongge
   - 🇰🇿 KZ 04 - dongge
   - 🇰🇿 KZ 05 - dongge
+  - 🇰🇿 KZ 06 - dongge
+  - 🇰🇿 KZ 07 - dongge
+  - 🇰🇿 KZ 08 - dongge
+  - 🇰🇿 KZ 09 - dongge
+  - 🇰🇿 KZ 10 - dongge
+  - 🇰🇿 KZ 11 - dongge
+  - 🇰🇿 KZ 12 - dongge
+  - 🇰🇿 KZ 13 - dongge
 rules:
 - MATCH,PROXIES
