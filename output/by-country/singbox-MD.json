@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE 01 - dongge"
+        "🇲🇩 MD 01 - dongge",
+        "🇲🇩 MD 02 - dongge",
+        "🇲🇩 MD 03 - dongge",
+        "🇲🇩 MD 04 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE 01 - dongge"
+        "🇲🇩 MD 01 - dongge",
+        "🇲🇩 MD 02 - dongge",
+        "🇲🇩 MD 03 - dongge",
+        "🇲🇩 MD 04 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
