@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - dongge"
+        "🇷🇴 RO 01 - dongge",
+        "🇷🇴 RO 02 - dongge",
+        "🇷🇴 RO 03 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - dongge"
+        "🇷🇴 RO 01 - dongge",
+        "🇷🇴 RO 02 - dongge",
+        "🇷🇴 RO 03 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
