@@ -6,38 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 02 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 03 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 04 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 05 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 06 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 07 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 08 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 09 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 10 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 11 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 12 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 13 - dongge"
+        "🇦🇺 澳大利亚 (Australia) 01 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 02 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 03 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 04 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 05 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 06 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 07 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 08 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 09 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 10 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 11 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 12 - dongge",
-        "🇦🇺 澳大利亚 (Australia) 13 - dongge"
+        "🇦🇺 澳大利亚 (Australia) 01 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },

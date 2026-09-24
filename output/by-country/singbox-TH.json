@@ -6,36 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - dongge",
-        "🇹🇭 TH 02 - dongge",
-        "🇹🇭 TH 03 - dongge",
-        "🇹🇭 TH 04 - dongge",
-        "🇹🇭 TH 05 - dongge",
-        "🇹🇭 TH 06 - dongge",
-        "🇹🇭 TH 07 - dongge",
-        "🇹🇭 TH 08 - dongge",
-        "🇹🇭 TH 09 - dongge",
-        "🇹🇭 TH 10 - dongge",
-        "🇹🇭 TH 11 - dongge",
-        "🇹🇭 TH 12 - dongge"
+        "🇹🇭 TH 01 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - dongge",
-        "🇹🇭 TH 02 - dongge",
-        "🇹🇭 TH 03 - dongge",
-        "🇹🇭 TH 04 - dongge",
-        "🇹🇭 TH 05 - dongge",
-        "🇹🇭 TH 06 - dongge",
-        "🇹🇭 TH 07 - dongge",
-        "🇹🇭 TH 08 - dongge",
-        "🇹🇭 TH 09 - dongge",
-        "🇹🇭 TH 10 - dongge",
-        "🇹🇭 TH 11 - dongge",
-        "🇹🇭 TH 12 - dongge"
+        "🇹🇭 TH 01 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
