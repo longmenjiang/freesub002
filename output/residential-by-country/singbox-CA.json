@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - dongge"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - dongge",
+        "🇨🇦 加拿大 (Canada) 02 (家宽) - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - dongge"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - dongge",
+        "🇨🇦 加拿大 (Canada) 02 (家宽) - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
