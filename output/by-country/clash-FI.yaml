@@ -15,7 +15,7 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?TELEGRAM--BYA---@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
+    path: /
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 02 - dongge
@@ -34,6 +34,18 @@ proxies:
       Host: c12.com
 - name: 🇫🇮 FI 03 - dongge
   type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
+- name: 🇫🇮 FI 04 - dongge
+  type: vless
   server: k2.cloud--vpn.site
   port: 443
   uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
@@ -46,7 +58,19 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 04 - dongge
+- name: 🇫🇮 FI 05 - dongge
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 06 - dongge
   type: vless
   server: 185.79.138.71
   port: 448
@@ -58,7 +82,43 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - dongge
+- name: 🇫🇮 FI 07 - dongge
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 08 - dongge
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 09 - dongge
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 10 - dongge
   type: vless
   server: 185.79.138.71
   port: 448
@@ -80,6 +140,11 @@ proxy-groups:
   - 🇫🇮 FI 03 - dongge
   - 🇫🇮 FI 04 - dongge
   - 🇫🇮 FI 05 - dongge
+  - 🇫🇮 FI 06 - dongge
+  - 🇫🇮 FI 07 - dongge
+  - 🇫🇮 FI 08 - dongge
+  - 🇫🇮 FI 09 - dongge
+  - 🇫🇮 FI 10 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,5 +155,10 @@ proxy-groups:
   - 🇫🇮 FI 03 - dongge
   - 🇫🇮 FI 04 - dongge
   - 🇫🇮 FI 05 - dongge
+  - 🇫🇮 FI 06 - dongge
+  - 🇫🇮 FI 07 - dongge
+  - 🇫🇮 FI 08 - dongge
+  - 🇫🇮 FI 09 - dongge
+  - 🇫🇮 FI 10 - dongge
 rules:
 - MATCH,PROXIES
