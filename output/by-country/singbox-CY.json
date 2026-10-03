@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - dongge",
-        "🇨🇾 CY 02 - dongge",
-        "🇨🇾 CY 03 - dongge"
+        "🇨🇾 CY 01 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - dongge",
-        "🇨🇾 CY 02 - dongge",
-        "🇨🇾 CY 03 - dongge"
+        "🇨🇾 CY 01 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },

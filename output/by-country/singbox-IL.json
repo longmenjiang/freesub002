@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 IL 01 - dongge"
+        "🇮🇱 IL 01 - dongge",
+        "🇮🇱 IL 02 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 IL 01 - dongge"
+        "🇮🇱 IL 01 - dongge",
+        "🇮🇱 IL 02 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
