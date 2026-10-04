@@ -58,70 +58,19 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - dongge
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 185.158.133.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: speed.dulacloud.store
   network: ws
   ws-opts:
-    path: /
+    path: /dula?Telegram-WangCai2
     headers:
-      Host: uae.unixzone.us
+      Host: speed.dulacloud.store
 - name: 🇦🇪 阿联酋 (UAE) 06 - dongge
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - dongge
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - dongge
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - dongge
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - dongge
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -145,10 +94,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - dongge
   - 🇦🇪 阿联酋 (UAE) 05 - dongge
   - 🇦🇪 阿联酋 (UAE) 06 - dongge
-  - 🇦🇪 阿联酋 (UAE) 07 - dongge
-  - 🇦🇪 阿联酋 (UAE) 08 - dongge
-  - 🇦🇪 阿联酋 (UAE) 09 - dongge
-  - 🇦🇪 阿联酋 (UAE) 10 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -160,9 +105,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - dongge
   - 🇦🇪 阿联酋 (UAE) 05 - dongge
   - 🇦🇪 阿联酋 (UAE) 06 - dongge
-  - 🇦🇪 阿联酋 (UAE) 07 - dongge
-  - 🇦🇪 阿联酋 (UAE) 08 - dongge
-  - 🇦🇪 阿联酋 (UAE) 09 - dongge
-  - 🇦🇪 阿联酋 (UAE) 10 - dongge
 rules:
 - MATCH,PROXIES

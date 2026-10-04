@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - dongge"
+        "🇸🇪 SE 01 - dongge",
+        "🇸🇪 SE 02 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - dongge"
+        "🇸🇪 SE 01 - dongge",
+        "🇸🇪 SE 02 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
