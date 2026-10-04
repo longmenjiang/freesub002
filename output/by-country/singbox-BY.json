@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 BY 01 - dongge",
-        "🇧🇾 BY 02 - dongge",
-        "🇧🇾 BY 03 - dongge",
-        "🇧🇾 BY 04 - dongge",
-        "🇧🇾 BY 05 - dongge"
+        "🇧🇾 BY 01 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 BY 01 - dongge",
-        "🇧🇾 BY 02 - dongge",
-        "🇧🇾 BY 03 - dongge",
-        "🇧🇾 BY 04 - dongge",
-        "🇧🇾 BY 05 - dongge"
+        "🇧🇾 BY 01 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
