@@ -5,62 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - dongge
-  type: vless
-  server: 104.18.46.234
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 02 - dongge
-  type: vless
-  server: 162.159.24.131
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 03 - dongge
-  type: vless
-  server: 104.18.46.234
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 04 - dongge
   type: ss
   server: 45.207.207.25
   port: 443
   cipher: aes-256-gcm
   password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
-- name: 🇸🇨 SC 05 - dongge
+- name: 🇸🇨 SC 02 - dongge
   type: vless
-  server: 172.64.42.85
-  port: 8880
+  server: 162.159.24.131
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: ?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 03 - dongge
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
@@ -71,8 +45,6 @@ proxy-groups:
   - 🇸🇨 SC 01 - dongge
   - 🇸🇨 SC 02 - dongge
   - 🇸🇨 SC 03 - dongge
-  - 🇸🇨 SC 04 - dongge
-  - 🇸🇨 SC 05 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,7 +53,5 @@ proxy-groups:
   - 🇸🇨 SC 01 - dongge
   - 🇸🇨 SC 02 - dongge
   - 🇸🇨 SC 03 - dongge
-  - 🇸🇨 SC 04 - dongge
-  - 🇸🇨 SC 05 - dongge
 rules:
 - MATCH,PROXIES
