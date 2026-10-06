@@ -13,30 +13,32 @@ proxies:
   udp: true
 - name: 🇫🇷 法国 (France) 02 - dongge
   type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 03 - dongge
-  type: vless
-  server: maxfieldbox-nayab.org
+  server: megariverport-nayab.org
   port: 443
-  uuid: 317ac662-c9da-4a69-ab73-1676c247f31e
+  uuid: 5f2cfa07-db6f-415d-9ad9-d49a3d3466a3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: moonleaflab-jamesbondi.info
+  servername: ngkje.bluefieldbox-nexolo.sbs
   network: ws
   ws-opts:
-    path: /other
+    path: /jar
     headers:
-      Host: moonleaflab-jamesbondi.info
+      Host: ngkje.bluefieldbox-nexolo.sbs
+- name: 🇫🇷 法国 (France) 03 - dongge
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
 - name: 🇫🇷 法国 (France) 04 - dongge
   type: vless
   server: 172.67.185.98
@@ -52,46 +54,21 @@ proxies:
     headers:
       Host: fr.api-music-fa.com
 - name: 🇫🇷 法国 (France) 05 - dongge
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 - name: 🇫🇷 法国 (France) 06 - dongge
-  type: vless
-  server: megariverport-nayab.org
-  port: 443
-  uuid: 5f2cfa07-db6f-415d-9ad9-d49a3d3466a3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ngkje.bluefieldbox-nexolo.sbs
-  network: ws
-  ws-opts:
-    path: /jar
-    headers:
-      Host: ngkje.bluefieldbox-nexolo.sbs
-- name: 🇫🇷 法国 (France) 07 - dongge
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 08 - dongge
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -102,46 +79,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 09 - dongge
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 10 - dongge
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 11 - dongge
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 12 - dongge
+- name: 🇫🇷 法国 (France) 07 - dongge
   type: vless
   server: 149.202.58.99
   port: 443
@@ -155,34 +93,106 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 08 - dongge
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 09 - dongge
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 10 - dongge
+  type: vless
+  server: 104.21.64.250
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇫🇷 法国 (France) 11 - dongge
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 12 - dongge
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
 - name: 🇫🇷 法国 (France) 13 - dongge
   type: vless
-  server: 172.67.185.98
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fr.api-music-fa.com
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/fr2035
+    path: /vws/
     headers:
-      Host: fr.api-music-fa.com
+      Host: bab-6.site
 - name: 🇫🇷 法国 (France) 14 - dongge
-  type: vless
-  server: 104.21.84.30
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  type: vmess
+  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  port: 80
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fr.api-music-fa.com
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/fr2035
+    path: /
     headers:
-      Host: fr.api-music-fa.com
+      Host: ''
 - name: 🇫🇷 法国 (France) 15 - dongge
   type: vmess
   server: 188.114.96.19
@@ -200,34 +210,73 @@ proxies:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 16 - dongge
   type: vless
-  server: 81.95.4.189
+  server: maxfieldbox-nayab.org
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  uuid: 317ac662-c9da-4a69-ab73-1676c247f31e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
+  servername: moonleaflab-jamesbondi.info
   network: ws
   ws-opts:
-    path: /vws/
+    path: /other
     headers:
-      Host: bab-6.site
+      Host: moonleaflab-jamesbondi.info
 - name: 🇫🇷 法国 (France) 17 - dongge
-  type: vmess
-  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-  port: 80
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.72.47
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 18 - dongge
+  type: vless
+  server: 172.67.193.182
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 19 - dongge
+  type: vless
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ''
-- name: 🇫🇷 法国 (France) 18 - dongge
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇫🇷 法国 (France) 20 - dongge
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 21 - dongge
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -238,22 +287,18 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 19 - dongge
+- name: 🇫🇷 法国 (France) 22 - dongge
   type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 20 - dongge
+  servername: ''
+- name: 🇫🇷 法国 (France) 23 - dongge
   type: vless
   server: 149.202.58.99
   port: 443
@@ -267,19 +312,7 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 21 - dongge
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 22 - dongge
+- name: 🇫🇷 法国 (France) 24 - dongge
   type: vless
   server: 104.21.84.30
   port: 2053
@@ -293,32 +326,49 @@ proxies:
     path: /api/voip/updates/static/fr2035
     headers:
       Host: fr.api-music-fa.com
-- name: 🇫🇷 法国 (France) 23 - dongge
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 24 - dongge
+- name: 🇫🇷 法国 (France) 25 - dongge
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
+  servername: fr.api-music-fa.com
   network: ws
   ws-opts:
-    path: /vws/
+    path: /api/voip/updates/static/fr2035
     headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 25 - dongge
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 26 - dongge
+  type: vless
+  server: 172.67.145.21
+  port: 443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇫🇷 法国 (France) 27 - dongge
+  type: vless
+  server: www.large-files.info
+  port: 8443
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.large-files.info
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+    headers:
+      Host: www.large-files.info
+- name: 🇫🇷 法国 (France) 28 - dongge
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -333,36 +383,35 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 26 - dongge
+- name: 🇫🇷 法国 (France) 29 - dongge
   type: vless
-  server: www.large-files.info
-  port: 8443
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  server: 172.67.175.23
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.large-files.info
+  servername: trex-panel-nubj0s.samifakor.workers.dev
   network: ws
   ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
+    path: /stream/TrexBridge/ef859652a80e
     headers:
-      Host: www.large-files.info
-- name: 🇫🇷 法国 (France) 27 - dongge
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
-  alterId: 0
-  cipher: auto
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 30 - dongge
+  type: vless
+  server: 104.20.17.127
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /stream/TrexBridge/ef859652a80e
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 28 - dongge
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 31 - dongge
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -373,6 +422,20 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 32 - dongge
+  type: vless
+  server: 172.67.185.98
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -406,6 +469,10 @@ proxy-groups:
   - 🇫🇷 法国 (France) 26 - dongge
   - 🇫🇷 法国 (France) 27 - dongge
   - 🇫🇷 法国 (France) 28 - dongge
+  - 🇫🇷 法国 (France) 29 - dongge
+  - 🇫🇷 法国 (France) 30 - dongge
+  - 🇫🇷 法国 (France) 31 - dongge
+  - 🇫🇷 法国 (France) 32 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -439,5 +506,9 @@ proxy-groups:
   - 🇫🇷 法国 (France) 26 - dongge
   - 🇫🇷 法国 (France) 27 - dongge
   - 🇫🇷 法国 (France) 28 - dongge
+  - 🇫🇷 法国 (France) 29 - dongge
+  - 🇫🇷 法国 (France) 30 - dongge
+  - 🇫🇷 法国 (France) 31 - dongge
+  - 🇫🇷 法国 (France) 32 - dongge
 rules:
 - MATCH,PROXIES
