@@ -19,17 +19,18 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - dongge
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: pyip=bpb.yousef.isegaro.comfp=random
     headers:
-      Host: uae.unixzone.us
+      Host: free.cndyw.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 03 - dongge
   type: vless
   server: uae.unixzone.us
@@ -69,32 +70,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - dongge
-  type: vless
-  server: 172.64.229.170
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇦🇪 阿联酋 (UAE) 07 - dongge
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,8 +80,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - dongge
   - 🇦🇪 阿联酋 (UAE) 04 - dongge
   - 🇦🇪 阿联酋 (UAE) 05 - dongge
-  - 🇦🇪 阿联酋 (UAE) 06 - dongge
-  - 🇦🇪 阿联酋 (UAE) 07 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,7 +90,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - dongge
   - 🇦🇪 阿联酋 (UAE) 04 - dongge
   - 🇦🇪 阿联酋 (UAE) 05 - dongge
-  - 🇦🇪 阿联酋 (UAE) 06 - dongge
-  - 🇦🇪 阿联酋 (UAE) 07 - dongge
 rules:
 - MATCH,PROXIES
