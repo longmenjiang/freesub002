@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - dongge",
+        "🇲🇩 MD 02 - dongge",
+        "🇲🇩 MD 03 - dongge",
+        "🇲🇩 MD 04 - dongge",
+        "🇲🇩 MD 05 - dongge",
+        "🇲🇩 MD 06 - dongge",
+        "🇲🇩 MD 07 - dongge",
+        "🇲🇩 MD 08 - dongge",
+        "🇲🇩 MD 09 - dongge",
+        "🇲🇩 MD 10 - dongge",
+        "🇲🇩 MD 11 - dongge",
+        "🇲🇩 MD 12 - dongge",
+        "🇲🇩 MD 13 - dongge",
+        "🇲🇩 MD 14 - dongge",
+        "🇲🇩 MD 15 - dongge",
+        "🇲🇩 MD 16 - dongge",
+        "🇲🇩 MD 17 - dongge"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - dongge",
+        "🇲🇩 MD 02 - dongge",
+        "🇲🇩 MD 03 - dongge",
+        "🇲🇩 MD 04 - dongge",
+        "🇲🇩 MD 05 - dongge",
+        "🇲🇩 MD 06 - dongge",
+        "🇲🇩 MD 07 - dongge",
+        "🇲🇩 MD 08 - dongge",
+        "🇲🇩 MD 09 - dongge",
+        "🇲🇩 MD 10 - dongge",
+        "🇲🇩 MD 11 - dongge",
+        "🇲🇩 MD 12 - dongge",
+        "🇲🇩 MD 13 - dongge",
+        "🇲🇩 MD 14 - dongge",
+        "🇲🇩 MD 15 - dongge",
+        "🇲🇩 MD 16 - dongge",
+        "🇲🇩 MD 17 - dongge"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
