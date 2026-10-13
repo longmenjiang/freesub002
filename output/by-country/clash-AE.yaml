@@ -19,7 +19,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - dongge
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -45,6 +45,20 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - dongge
   type: vless
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 05 - dongge
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -56,7 +70,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - dongge
+- name: 🇦🇪 阿联酋 (UAE) 06 - dongge
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - dongge
   type: vless
   server: 31.57.190.17
   port: 443
@@ -70,21 +97,21 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 06 - dongge
+- name: 🇦🇪 阿联酋 (UAE) 08 - dongge
   type: vless
-  server: 116.204.164.17
-  port: 7443
-  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /@Marisa_kristifp=chrome
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 07 - dongge
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 09 - dongge
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -97,20 +124,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - dongge
-  type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -124,6 +137,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - dongge
   - 🇦🇪 阿联酋 (UAE) 07 - dongge
   - 🇦🇪 阿联酋 (UAE) 08 - dongge
+  - 🇦🇪 阿联酋 (UAE) 09 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,5 +151,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - dongge
   - 🇦🇪 阿联酋 (UAE) 07 - dongge
   - 🇦🇪 阿联酋 (UAE) 08 - dongge
+  - 🇦🇪 阿联酋 (UAE) 09 - dongge
 rules:
 - MATCH,PROXIES
