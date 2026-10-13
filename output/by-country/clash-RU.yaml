@@ -5,26 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - dongge
+  type: vless
+  server: 188.114.97.3
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: newwk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
+- name: 🇷🇺 俄罗斯 (Russia) 02 - dongge
+  type: vless
+  server: 172.67.209.127
+  port: 8880
+  uuid: 1b3ad465-d37e-48a2-bb53-d7fddfc97b11
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: calm-silence-d4a1.217.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - dongge
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - dongge
+- name: 🇷🇺 俄罗斯 (Russia) 04 - dongge
   type: vless
-  server: 172.67.173.89
+  server: 104.21.67.236
   port: 443
-  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
+  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+  servername: eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV
   network: ws
   ws-opts:
-    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
+    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +59,8 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - dongge
   - 🇷🇺 俄罗斯 (Russia) 02 - dongge
+  - 🇷🇺 俄罗斯 (Russia) 03 - dongge
+  - 🇷🇺 俄罗斯 (Russia) 04 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +68,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - dongge
   - 🇷🇺 俄罗斯 (Russia) 02 - dongge
+  - 🇷🇺 俄罗斯 (Russia) 03 - dongge
+  - 🇷🇺 俄罗斯 (Russia) 04 - dongge
 rules:
 - MATCH,PROXIES
