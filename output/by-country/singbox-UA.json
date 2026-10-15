@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 UA 01 - dongge"
+        "🇺🇦 UA 01 - dongge",
+        "🇺🇦 UA 02 - dongge",
+        "🇺🇦 UA 03 - dongge",
+        "🇺🇦 UA 04 - dongge",
+        "🇺🇦 UA 05 - dongge",
+        "🇺🇦 UA 06 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 UA 01 - dongge"
+        "🇺🇦 UA 01 - dongge",
+        "🇺🇦 UA 02 - dongge",
+        "🇺🇦 UA 03 - dongge",
+        "🇺🇦 UA 04 - dongge",
+        "🇺🇦 UA 05 - dongge",
+        "🇺🇦 UA 06 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
