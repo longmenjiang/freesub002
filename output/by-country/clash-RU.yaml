@@ -5,72 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - dongge
-  type: vless
-  server: 45.133.151.186
-  port: 25393
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
-  servername: www.samsung.com
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 02 - dongge
-  type: vless
-  server: 199.68.156.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇷🇺 俄罗斯 (Russia) 03 - dongge
-  type: ss
-  server: 194.87.196.107
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - dongge
-  type: vless
-  server: 172.66.47.45
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 05 - dongge
-  type: vless
-  server: 172.66.44.211
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 06 - dongge
   type: ss
   server: 176.32.32.108
   port: 18443
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - dongge
+  type: ss
+  server: 194.87.196.107
+  port: 18443
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -79,10 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - dongge
   - 🇷🇺 俄罗斯 (Russia) 02 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 03 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 04 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 05 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 06 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,9 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - dongge
   - 🇷🇺 俄罗斯 (Russia) 02 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 03 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 04 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 05 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 06 - dongge
 rules:
 - MATCH,PROXIES
