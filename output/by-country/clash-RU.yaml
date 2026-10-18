@@ -13,20 +13,6 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - dongge
   type: ss
-  server: 90.156.203.62
-  port: 5112
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - dongge
-  type: ss
-  server: 176.32.32.108
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - dongge
-  type: ss
   server: 194.87.196.107
   port: 18443
   cipher: aes-256-gcm
@@ -39,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - dongge
   - 🇷🇺 俄罗斯 (Russia) 02 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 03 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 04 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - dongge
   - 🇷🇺 俄罗斯 (Russia) 02 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 03 - dongge
-  - 🇷🇺 俄罗斯 (Russia) 04 - dongge
 rules:
 - MATCH,PROXIES
