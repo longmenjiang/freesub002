@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - dongge"
+        "🇷🇺 俄罗斯 (Russia) 01 - dongge",
+        "🇷🇺 俄罗斯 (Russia) 02 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - dongge"
+        "🇷🇺 俄罗斯 (Russia) 01 - dongge",
+        "🇷🇺 俄罗斯 (Russia) 02 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
