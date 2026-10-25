@@ -18,33 +18,17 @@ proxies:
   client-fingerprint: random
 - name: 🇫🇮 FI 02 - dongge
   type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 8e6efaba-ba3d-49ec-98aa-c8f9baaf1d17
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056fp=chrome
-    headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 03 - dongge
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 8e6efaba-ba3d-49ec-98aa-c8f9baaf1d17
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
-    headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-- name: 🇫🇮 FI 04 - dongge
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -56,19 +40,30 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 04 - dongge
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 05 - dongge
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 06 - dongge
   type: vless
   server: 45.144.234.157
@@ -112,44 +107,17 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 09 - dongge
   type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 10 - dongge
-  type: vless
-  server: hw3.divarkhaghazi.com.
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 11 - dongge
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -164,8 +132,6 @@ proxy-groups:
   - 🇫🇮 FI 07 - dongge
   - 🇫🇮 FI 08 - dongge
   - 🇫🇮 FI 09 - dongge
-  - 🇫🇮 FI 10 - dongge
-  - 🇫🇮 FI 11 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -180,7 +146,5 @@ proxy-groups:
   - 🇫🇮 FI 07 - dongge
   - 🇫🇮 FI 08 - dongge
   - 🇫🇮 FI 09 - dongge
-  - 🇫🇮 FI 10 - dongge
-  - 🇫🇮 FI 11 - dongge
 rules:
 - MATCH,PROXIES
