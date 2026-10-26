@@ -22,25 +22,25 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 03 - dongge
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 04 - dongge
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 168.222.49.164
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 05 - dongge
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: milo.networkforexir.site
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
   tls: false
   skip-cert-verify: true
@@ -52,6 +52,75 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 07 - dongge
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 08 - dongge
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 09 - dongge
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 10 - dongge
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 11 - dongge
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 12 - dongge
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 13 - dongge
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 14 - dongge
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +132,14 @@ proxy-groups:
   - 🇵🇱 PL 04 - dongge
   - 🇵🇱 PL 05 - dongge
   - 🇵🇱 PL 06 - dongge
+  - 🇵🇱 PL 07 - dongge
+  - 🇵🇱 PL 08 - dongge
+  - 🇵🇱 PL 09 - dongge
+  - 🇵🇱 PL 10 - dongge
+  - 🇵🇱 PL 11 - dongge
+  - 🇵🇱 PL 12 - dongge
+  - 🇵🇱 PL 13 - dongge
+  - 🇵🇱 PL 14 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +151,13 @@ proxy-groups:
   - 🇵🇱 PL 04 - dongge
   - 🇵🇱 PL 05 - dongge
   - 🇵🇱 PL 06 - dongge
+  - 🇵🇱 PL 07 - dongge
+  - 🇵🇱 PL 08 - dongge
+  - 🇵🇱 PL 09 - dongge
+  - 🇵🇱 PL 10 - dongge
+  - 🇵🇱 PL 11 - dongge
+  - 🇵🇱 PL 12 - dongge
+  - 🇵🇱 PL 13 - dongge
+  - 🇵🇱 PL 14 - dongge
 rules:
 - MATCH,PROXIES
