@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - dongge
+  type: vless
+  server: 156.252.229.11
+  port: 8443
+  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+  servername: play.googleapis.com
+  client-fingerprint: chrome
+- name: 🇸🇨 SC 02 - dongge
+  type: vless
+  server: 154.218.15.250
+  port: 2083
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: proxy-1cu.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-1cu.pages.dev
+- name: 🇸🇨 SC 03 - dongge
   type: vmess
   server: 156.239.224.107
   port: 57278
@@ -19,21 +45,20 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇸🇨 SC 02 - dongge
-  type: vmess
-  server: 156.239.224.107
-  port: 57278
-  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
-  alterId: 0
-  cipher: auto
+- name: 🇸🇨 SC 04 - dongge
+  type: vless
+  server: 154.211.8.227
+  port: 2087
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: proxy-34l.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +66,8 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - dongge
   - 🇸🇨 SC 02 - dongge
+  - 🇸🇨 SC 03 - dongge
+  - 🇸🇨 SC 04 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +75,7 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - dongge
   - 🇸🇨 SC 02 - dongge
+  - 🇸🇨 SC 03 - dongge
+  - 🇸🇨 SC 04 - dongge
 rules:
 - MATCH,PROXIES
