@@ -6,143 +6,47 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - dongge
   type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 104.16.10.22
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /fp
+    path: /tyxyws
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - dongge
   type: vless
-  server: 104.18.45.38
+  server: 104.16.0.1
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /fp
+    path: /tyxyws
     headers:
-      Host: ccc.010304.xyz
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - dongge
   type: vless
-  server: 172.64.144.198
+  server: 104.21.70.228
   port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 04 - dongge
-  type: vless
-  server: 172.67.133.118
-  port: 2053
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 05 - dongge
-  type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: levikoconfig.levikogjgfdd.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: levikoconfig.levikogjgfdd.ir
-- name: 🌐 其他地区 (Other) 06 - dongge
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex3r.qzz.io
-  network: ws
-  ws-opts:
-    path: /sg-orcl
-    headers:
-      Host: ex3r.qzz.io
-- name: 🌐 其他地区 (Other) 07 - dongge
-  type: vless
-  server: 104.27.124.133
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
-- name: 🌐 其他地区 (Other) 08 - dongge
-  type: vless
-  server: 104.21.14.232
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nuclear.us.kg
-  network: ws
-  ws-opts:
-    path: /free/1.226.227.169:50001
-    headers:
-      Host: nuclear.us.kg
-- name: 🌐 其他地区 (Other) 09 - dongge
-  type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 10 - dongge
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 11 - dongge
   type: vless
   server: 104.17.154.123
   port: 443
@@ -156,38 +60,9 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 12 - dongge
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 13 - dongge
+- name: 🌐 其他地区 (Other) 05 - dongge
   type: vless
-  server: 172.64.150.28
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime29.workers.dev
-- name: 🌐 其他地区 (Other) 14 - dongge
-  type: vless
-  server: 104.21.94.161
+  server: 172.64.146.66
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -199,9 +74,23 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 15 - dongge
+- name: 🌐 其他地区 (Other) 06 - dongge
   type: vless
-  server: 188.114.98.0
+  server: 104.18.41.190
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 07 - dongge
+  type: vless
+  server: 104.16.10.84
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -213,23 +102,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 16 - dongge
+- name: 🌐 其他地区 (Other) 08 - dongge
   type: vless
-  server: 172.64.147.154
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-- name: 🌐 其他地区 (Other) 17 - dongge
-  type: vless
-  server: 104.21.221.158
+  server: 104.18.47.73
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -238,12 +113,138 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 09 - dongge
+  type: vless
+  server: 172.64.153.153
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 10 - dongge
+  type: vless
+  server: 104.16.10.104
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 11 - dongge
+  type: vless
+  server: 104.18.41.86
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 12 - dongge
+  type: vless
+  server: 172.64.155.209
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 13 - dongge
+  type: vless
+  server: 104.17.50.53
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 14 - dongge
+  type: vless
+  server: 104.16.10.9
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🌐 其他地区 (Other) 15 - dongge
+  type: vless
+  server: 172.64.157.229
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 16 - dongge
+  type: vless
+  server: 104.18.45.38
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 17 - dongge
+  type: vless
+  server: 172.64.229.72
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 18 - dongge
   type: vless
-  server: 172.67.217.240
+  server: 104.16.10.9
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -257,7 +258,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 19 - dongge
   type: vless
-  server: 104.18.35.15
+  server: 104.21.221.158
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -271,21 +272,7 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 20 - dongge
   type: vless
-  server: 172.67.195.79
-  port: 2053
-  uuid: fc6e7824-c94a-499a-a713-883030381ff5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 21 - dongge
-  type: vless
-  server: 8.47.69.60
+  server: 104.18.32.47
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -297,20 +284,34 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 22 - dongge
+- name: 🌐 其他地区 (Other) 21 - dongge
   type: vless
-  server: 172.64.149.65
+  server: 104.16.111.102
   port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 22 - dongge
+  type: vless
+  server: 104.18.36.242
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+      Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 23 - dongge
   type: vless
   server: 172.64.152.241
@@ -327,7 +328,21 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 24 - dongge
   type: vless
-  server: 172.64.153.153
+  server: 172.64.158.170
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 25 - dongge
+  type: vless
+  server: 172.64.153.66
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -337,20 +352,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 25 - dongge
-  type: vless
-  server: 104.18.35.15
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 26 - dongge
@@ -369,173 +370,18 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 27 - dongge
   type: vless
-  server: 104.17.50.227
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /sg-melbi
     headers:
-      Host: jp3.yohototo.top
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 28 - dongge
-  type: vless
-  server: 172.67.76.40
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 29 - dongge
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 30 - dongge
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 31 - dongge
-  type: vless
-  server: 172.67.160.192
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nuclear.us.kg
-  network: ws
-  ws-opts:
-    path: /free/1.226.227.169:50001
-    headers:
-      Host: nuclear.us.kg
-- name: 🌐 其他地区 (Other) 32 - dongge
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 33 - dongge
-  type: vless
-  server: 172.67.145.14
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
-- name: 🌐 其他地区 (Other) 34 - dongge
-  type: vless
-  server: 8.47.69.60
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 35 - dongge
-  type: vless
-  server: 104.26.4.2
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 36 - dongge
-  type: vless
-  server: 104.21.221.158
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 37 - dongge
-  type: vless
-  server: 104.21.221.158
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 38 - dongge
-  type: vless
-  server: 172.67.160.192
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nuclear.us.kg
-  network: ws
-  ws-opts:
-    path: /free/103.101.153.32:443
-    headers:
-      Host: nuclear.us.kg
-- name: 🌐 其他地区 (Other) 39 - dongge
   type: vless
   server: 172.64.152.241
   port: 443
@@ -549,37 +395,190 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 40 - dongge
+- name: 🌐 其他地区 (Other) 29 - dongge
   type: vless
-  server: 188.114.97.6
-  port: 2087
-  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
+  server: cf.877774.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: levikoconfig.levikogjgfdd.ir
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: levikoconfig.levikogjgfdd.ir
-- name: 🌐 其他地区 (Other) 41 - dongge
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 30 - dongge
   type: vless
-  server: 104.21.73.135
+  server: 104.16.111.202
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /api/ws
+    path: /tyxyws
     headers:
-      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 31 - dongge
+  type: vless
+  server: 8.47.69.60
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 32 - dongge
+  type: vless
+  server: 104.21.221.158
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 33 - dongge
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 34 - dongge
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 35 - dongge
+  type: vless
+  server: 172.66.154.57
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 36 - dongge
+  type: vless
+  server: 104.18.35.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 37 - dongge
+  type: vless
+  server: 104.18.35.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 38 - dongge
+  type: vless
+  server: 172.66.154.57
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 39 - dongge
+  type: vless
+  server: 104.21.221.158
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 40 - dongge
+  type: vless
+  server: 8.47.69.60
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 41 - dongge
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 42 - dongge
   type: vless
-  server: 104.18.41.190
+  server: 172.64.150.181
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -593,7 +592,7 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 43 - dongge
   type: vless
-  server: 104.16.10.22
+  server: 104.21.70.21
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -605,132 +604,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 44 - dongge
-  type: vless
-  server: 188.114.97.6
-  port: 2096
-  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: levikoconfig.levikogjgfdd.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: levikoconfig.levikogjgfdd.ir
-- name: 🌐 其他地区 (Other) 45 - dongge
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 46 - dongge
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 47 - dongge
-  type: vless
-  server: 104.18.47.73
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 48 - dongge
-  type: vless
-  server: 104.18.41.190
-  port: 443
-  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ex3r.qzz.io
-  network: ws
-  ws-opts:
-    path: /sg-orcl
-    headers:
-      Host: ex3r.qzz.io
-- name: 🌐 其他地区 (Other) 49 - dongge
-  type: vless
-  server: 104.18.153.10
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 50 - dongge
-  type: vless
-  server: 104.27.110.37
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-app-ji3j1z.app-wuuhuw.workers.dev
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
-- name: 🌐 其他地区 (Other) 51 - dongge
-  type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 52 - dongge
-  type: vless
-  server: 104.18.40.100
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -779,15 +652,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 41 - dongge
   - 🌐 其他地区 (Other) 42 - dongge
   - 🌐 其他地区 (Other) 43 - dongge
-  - 🌐 其他地区 (Other) 44 - dongge
-  - 🌐 其他地区 (Other) 45 - dongge
-  - 🌐 其他地区 (Other) 46 - dongge
-  - 🌐 其他地区 (Other) 47 - dongge
-  - 🌐 其他地区 (Other) 48 - dongge
-  - 🌐 其他地区 (Other) 49 - dongge
-  - 🌐 其他地区 (Other) 50 - dongge
-  - 🌐 其他地区 (Other) 51 - dongge
-  - 🌐 其他地区 (Other) 52 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -836,14 +700,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 41 - dongge
   - 🌐 其他地区 (Other) 42 - dongge
   - 🌐 其他地区 (Other) 43 - dongge
-  - 🌐 其他地区 (Other) 44 - dongge
-  - 🌐 其他地区 (Other) 45 - dongge
-  - 🌐 其他地区 (Other) 46 - dongge
-  - 🌐 其他地区 (Other) 47 - dongge
-  - 🌐 其他地区 (Other) 48 - dongge
-  - 🌐 其他地区 (Other) 49 - dongge
-  - 🌐 其他地区 (Other) 50 - dongge
-  - 🌐 其他地区 (Other) 51 - dongge
-  - 🌐 其他地区 (Other) 52 - dongge
 rules:
 - MATCH,PROXIES
