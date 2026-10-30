@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - dongge
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 02 - dongge
-  type: vless
   server: 152.69.226.63
   port: 25555
   uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
@@ -29,7 +17,7 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 03 - dongge
+- name: 🇰🇷 韩国 (South Korea) 02 - dongge
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -39,7 +27,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - dongge
+- name: 🇰🇷 韩国 (South Korea) 03 - dongge
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -51,36 +39,26 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 04 - dongge
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 05 - dongge
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 06 - dongge
-  type: vmess
-  server: nickgus.cc.cd
-  port: 443
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-  alterId: 0
-  cipher: auto
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /photos
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 07 - dongge
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 06 - dongge
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -95,7 +73,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: None
-- name: 🇰🇷 韩国 (South Korea) 08 - dongge
+- name: 🇰🇷 韩国 (South Korea) 07 - dongge
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -108,12 +86,24 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 08 - dongge
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 09 - dongge
   type: ss
   server: 141.164.45.187
-  port: 7002
+  port: 6679
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: TEzjfAYq2IjtuoS
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 10 - dongge
   type: vless
@@ -129,21 +119,18 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 11 - dongge
-  type: vmess
-  server: nickgus.cc.cd
-  port: 443
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
-    path: /photos
+    path: /
     headers:
-      Host: ''
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 12 - dongge
   type: vless
   server: 152.69.226.63
@@ -158,34 +145,6 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 13 - dongge
-  type: vmess
-  server: nickgus.cc.cd
-  port: 443
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nickgus.cc.cd
-  network: ws
-  ws-opts:
-    path: /photos
-    headers:
-      Host: nickgus.cc.cd
-- name: 🇰🇷 韩国 (South Korea) 14 - dongge
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 15 - dongge
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -216,8 +175,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 11 - dongge
   - 🇰🇷 韩国 (South Korea) 12 - dongge
   - 🇰🇷 韩国 (South Korea) 13 - dongge
-  - 🇰🇷 韩国 (South Korea) 14 - dongge
-  - 🇰🇷 韩国 (South Korea) 15 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -236,7 +193,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 11 - dongge
   - 🇰🇷 韩国 (South Korea) 12 - dongge
   - 🇰🇷 韩国 (South Korea) 13 - dongge
-  - 🇰🇷 韩国 (South Korea) 14 - dongge
-  - 🇰🇷 韩国 (South Korea) 15 - dongge
 rules:
 - MATCH,PROXIES
