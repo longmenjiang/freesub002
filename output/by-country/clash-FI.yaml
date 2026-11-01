@@ -12,7 +12,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com.
+  servername: hw6.divarkhaghazi.com
   network: ws
   ws-opts:
     path: /
@@ -52,7 +52,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com
+  servername: hw6.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 05 - dongge
+  type: vless
+  server: hw6.divarkhaghazi.com
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
   network: ws
   ws-opts:
     path: /
@@ -67,6 +81,7 @@ proxy-groups:
   - 🇫🇮 FI 02 - dongge
   - 🇫🇮 FI 03 - dongge
   - 🇫🇮 FI 04 - dongge
+  - 🇫🇮 FI 05 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +91,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - dongge
   - 🇫🇮 FI 03 - dongge
   - 🇫🇮 FI 04 - dongge
+  - 🇫🇮 FI 05 - dongge
 rules:
 - MATCH,PROXIES
