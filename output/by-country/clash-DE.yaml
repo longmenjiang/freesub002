@@ -13,72 +13,39 @@ proxies:
   udp: true
 - name: 🇩🇪 德国 (Germany) 02 - dongge
   type: vless
-  server: 91.107.188.129
-  port: 2083
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  server: 146.75.57.238
+  port: 443
+  uuid: 31edfa90-bc81-4534-9066-322dbf52dcef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: site.check-looks.space
+  servername: cdn.akamai.steamstatic.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 91.107.188.129
+      Host: azadi-gk-nasim.global.ssl.fastly.net
 - name: 🇩🇪 德国 (Germany) 03 - dongge
-  type: vmess
-  server: www.gptcloudai.com
-  port: 443
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.gptcloudai.com
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.gptcloudai.com
-- name: 🇩🇪 德国 (Germany) 04 - dongge
-  type: vmess
-  server: www.gptcloudai.com
-  port: 443
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.gptcloudai.com
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.gptcloudai.com
-- name: 🇩🇪 德国 (Germany) 05 - dongge
-  type: vless
-  server: 148.253.210.191
-  port: 443
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 148-253-210-191.sslip.io
-  network: ws
-  ws-opts:
-    path: /test-ws
-    headers:
-      Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 06 - dongge
   type: ss
   server: 185.176.204.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 07 - dongge
+- name: 🇩🇪 德国 (Germany) 04 - dongge
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 05 - dongge
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -92,19 +59,50 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 08 - dongge
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+- name: 🇩🇪 德国 (Germany) 06 - dongge
+  type: vmess
+  server: www.gptcloudai.com
+  port: 443
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: www.gptcloudai.com
   network: ws
   ws-opts:
-    path: /vless/
+    path: /truth
     headers:
-      Host: OV-Germany1.09vpn.com
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 07 - dongge
+  type: vless
+  server: 91.107.188.129
+  port: 2083
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: site.check-looks.space
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.188.129
+- name: 🇩🇪 德国 (Germany) 08 - dongge
+  type: vless
+  server: 167.172.165.106
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
 - name: 🇩🇪 德国 (Germany) 09 - dongge
   type: vless
   server: ov-germany1.09vpn.com
@@ -119,13 +117,34 @@ proxies:
     headers:
       Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 10 - dongge
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
 - name: 🇩🇪 德国 (Germany) 11 - dongge
+  type: vless
+  server: 148.253.210.191
+  port: 443
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 148-253-210-191.sslip.io
+  network: ws
+  ws-opts:
+    path: /test-ws
+    headers:
+      Host: 148-253-210-191.sslip.io
+- name: 🇩🇪 德国 (Germany) 12 - dongge
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -139,7 +158,30 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 12 - dongge
+- name: 🇩🇪 德国 (Germany) 13 - dongge
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - dongge
+  type: vmess
+  server: www.gptcloudai.com
+  port: 443
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.gptcloudai.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 15 - dongge
   type: vless
   server: 104.17.70.206
   port: 8443
@@ -153,20 +195,6 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 13 - dongge
-  type: vless
-  server: 146.75.57.238
-  port: 443
-  uuid: 31edfa90-bc81-4534-9066-322dbf52dcef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn.akamai.steamstatic.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: azadi-gk-nasim.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -185,6 +213,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 11 - dongge
   - 🇩🇪 德国 (Germany) 12 - dongge
   - 🇩🇪 德国 (Germany) 13 - dongge
+  - 🇩🇪 德国 (Germany) 14 - dongge
+  - 🇩🇪 德国 (Germany) 15 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -203,5 +233,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 11 - dongge
   - 🇩🇪 德国 (Germany) 12 - dongge
   - 🇩🇪 德国 (Germany) 13 - dongge
+  - 🇩🇪 德国 (Germany) 14 - dongge
+  - 🇩🇪 德国 (Germany) 15 - dongge
 rules:
 - MATCH,PROXIES
