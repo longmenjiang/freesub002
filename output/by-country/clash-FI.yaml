@@ -6,6 +6,32 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - dongge
   type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 02 - dongge
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 03 - dongge
+  type: vless
   server: 65.109.208.183
   port: 443
   uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
@@ -13,46 +39,15 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 02 - dongge
+- name: 🇫🇮 FI 04 - dongge
   type: vless
-  server: 138.124.124.157
+  server: 65.109.208.183
   port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇫🇮 FI 03 - dongge
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - dongge
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  servername: free.for.member.iiproxy.com
 - name: 🇫🇮 FI 05 - dongge
   type: vless
   server: 146.103.118.189
@@ -68,6 +63,34 @@ proxies:
     headers:
       Host: nl2.574ck.xyz
 - name: 🇫🇮 FI 06 - dongge
+  type: vless
+  server: 109.120.134.181
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇫🇮 FI 07 - dongge
+  type: vless
+  server: 138.124.49.108
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇫🇮 FI 08 - dongge
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -91,6 +114,8 @@ proxy-groups:
   - 🇫🇮 FI 04 - dongge
   - 🇫🇮 FI 05 - dongge
   - 🇫🇮 FI 06 - dongge
+  - 🇫🇮 FI 07 - dongge
+  - 🇫🇮 FI 08 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,5 +127,7 @@ proxy-groups:
   - 🇫🇮 FI 04 - dongge
   - 🇫🇮 FI 05 - dongge
   - 🇫🇮 FI 06 - dongge
+  - 🇫🇮 FI 07 - dongge
+  - 🇫🇮 FI 08 - dongge
 rules:
 - MATCH,PROXIES
