@@ -6,14 +6,14 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - dongge
   type: ss
-  server: 168.138.205.100
-  port: 53758
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
 - name: 🇯🇵 日本 (Japan) 02 - dongge
   type: vless
-  server: 43.170.8.95
+  server: 104.16.0.1
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -26,27 +26,20 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 03 - dongge
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 04 - dongge
   type: vless
-  server: 13.140.248.125
+  server: 64.178.113.127
   port: 443
-  uuid: 4f82d72b-9644-c39a-ac6b-abbf15a862aa
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xray-p1vi234h-lunar-forest-6.cloady.io
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /e3e2aa65089989f0
+    path: /tyxyws
     headers:
-      Host: xray-p1vi234h-lunar-forest-6.cloady.io
-- name: 🇯🇵 日本 (Japan) 05 - dongge
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 04 - dongge
   type: vless
   server: 62.106.70.68
   port: 443
@@ -60,9 +53,23 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 05 - dongge
+  type: vless
+  server: 104.16.111.102
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 06 - dongge
   type: vless
-  server: 45.142.126.184
+  server: 104.21.219.160
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -75,15 +82,22 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 07 - dongge
-  type: ss
-  server: 84.247.155.196
+  type: vless
+  server: 104.17.50.227
   port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 08 - dongge
   type: vless
-  server: 104.16.111.195
+  server: 188.114.98.0
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -97,8 +111,274 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 09 - dongge
   type: vless
-  server: 154.31.114.162
-  port: 8443
+  server: 104.18.42.98
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 10 - dongge
+  type: vless
+  server: 104.16.0.1
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 11 - dongge
+  type: vless
+  server: 104.19.48.107
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 12 - dongge
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 13 - dongge
+  type: vless
+  server: 104.24.31.89
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 14 - dongge
+  type: vless
+  server: 152.69.200.216
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 15 - dongge
+  type: vless
+  server: 104.24.31.89
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 16 - dongge
+  type: vless
+  server: 104.17.210.74
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 17 - dongge
+  type: vless
+  server: 104.16.10.72
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 18 - dongge
+  type: vless
+  server: 131.143.180.53
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 19 - dongge
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 20 - dongge
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  udp: true
+- name: 🇯🇵 日本 (Japan) 21 - dongge
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 22 - dongge
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 23 - dongge
+  type: vless
+  server: 104.21.0.87
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 24 - dongge
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 25 - dongge
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 26 - dongge
+  type: vless
+  server: 104.24.0.1
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 27 - dongge
+  type: vless
+  server: 45.142.126.184
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 28 - dongge
+  type: vless
+  server: 62.106.75.37
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 29 - dongge
+  type: vless
+  server: 104.16.111.202
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 30 - dongge
+  type: vless
+  server: 45.142.126.184
+  port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
@@ -123,6 +403,27 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 07 - dongge
   - 🇯🇵 日本 (Japan) 08 - dongge
   - 🇯🇵 日本 (Japan) 09 - dongge
+  - 🇯🇵 日本 (Japan) 10 - dongge
+  - 🇯🇵 日本 (Japan) 11 - dongge
+  - 🇯🇵 日本 (Japan) 12 - dongge
+  - 🇯🇵 日本 (Japan) 13 - dongge
+  - 🇯🇵 日本 (Japan) 14 - dongge
+  - 🇯🇵 日本 (Japan) 15 - dongge
+  - 🇯🇵 日本 (Japan) 16 - dongge
+  - 🇯🇵 日本 (Japan) 17 - dongge
+  - 🇯🇵 日本 (Japan) 18 - dongge
+  - 🇯🇵 日本 (Japan) 19 - dongge
+  - 🇯🇵 日本 (Japan) 20 - dongge
+  - 🇯🇵 日本 (Japan) 21 - dongge
+  - 🇯🇵 日本 (Japan) 22 - dongge
+  - 🇯🇵 日本 (Japan) 23 - dongge
+  - 🇯🇵 日本 (Japan) 24 - dongge
+  - 🇯🇵 日本 (Japan) 25 - dongge
+  - 🇯🇵 日本 (Japan) 26 - dongge
+  - 🇯🇵 日本 (Japan) 27 - dongge
+  - 🇯🇵 日本 (Japan) 28 - dongge
+  - 🇯🇵 日本 (Japan) 29 - dongge
+  - 🇯🇵 日本 (Japan) 30 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,5 +438,26 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 07 - dongge
   - 🇯🇵 日本 (Japan) 08 - dongge
   - 🇯🇵 日本 (Japan) 09 - dongge
+  - 🇯🇵 日本 (Japan) 10 - dongge
+  - 🇯🇵 日本 (Japan) 11 - dongge
+  - 🇯🇵 日本 (Japan) 12 - dongge
+  - 🇯🇵 日本 (Japan) 13 - dongge
+  - 🇯🇵 日本 (Japan) 14 - dongge
+  - 🇯🇵 日本 (Japan) 15 - dongge
+  - 🇯🇵 日本 (Japan) 16 - dongge
+  - 🇯🇵 日本 (Japan) 17 - dongge
+  - 🇯🇵 日本 (Japan) 18 - dongge
+  - 🇯🇵 日本 (Japan) 19 - dongge
+  - 🇯🇵 日本 (Japan) 20 - dongge
+  - 🇯🇵 日本 (Japan) 21 - dongge
+  - 🇯🇵 日本 (Japan) 22 - dongge
+  - 🇯🇵 日本 (Japan) 23 - dongge
+  - 🇯🇵 日本 (Japan) 24 - dongge
+  - 🇯🇵 日本 (Japan) 25 - dongge
+  - 🇯🇵 日本 (Japan) 26 - dongge
+  - 🇯🇵 日本 (Japan) 27 - dongge
+  - 🇯🇵 日本 (Japan) 28 - dongge
+  - 🇯🇵 日本 (Japan) 29 - dongge
+  - 🇯🇵 日本 (Japan) 30 - dongge
 rules:
 - MATCH,PROXIES
