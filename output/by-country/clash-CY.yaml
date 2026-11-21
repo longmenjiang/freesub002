@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - dongge
-  type: ss
-  server: 31.210.78.66
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: o3-9Eg79umh4CaY8sWC7b3
+- name: 🇨🇾 CY 01 - dongge
+  type: vless
+  server: 45.86.60.174
+  port: 16443
+  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - dongge
+  - 🇨🇾 CY 01 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - dongge
+  - 🇨🇾 CY 01 - dongge
 rules:
 - MATCH,PROXIES
