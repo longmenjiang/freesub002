@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - dongge"
+        "🇰🇿 KZ 01 - dongge",
+        "🇰🇿 KZ 02 - dongge",
+        "🇰🇿 KZ 03 - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - dongge"
+        "🇰🇿 KZ 01 - dongge",
+        "🇰🇿 KZ 02 - dongge",
+        "🇰🇿 KZ 03 - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
