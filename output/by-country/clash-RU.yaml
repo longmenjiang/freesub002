@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - dongge
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - dongge
   type: vless
   server: 136.148.83.70
   port: 443
@@ -20,21 +13,32 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 03 - dongge
+- name: 🇷🇺 俄罗斯 (Russia) 02 - dongge
   type: vless
-  server: 72.56.238.135
+  server: 136.148.83.69
   port: 443
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: parchment.merlano.monster
-  network: ws
-  ws-opts:
-    path: /api/de7/stream
-    headers:
-      Host: parchment.merlano.monster
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 03 - dongge
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 04 - dongge
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - dongge
   type: vless
   server: 147.45.175.81
   port: 443
@@ -48,7 +52,7 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 05 - dongge
+- name: 🇷🇺 俄罗斯 (Russia) 06 - dongge
   type: vless
   server: 136.148.83.69
   port: 443
@@ -57,6 +61,20 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 07 - dongge
+  type: vless
+  server: 147.45.221.225
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 147.45.221.225
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +85,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - dongge
   - 🇷🇺 俄罗斯 (Russia) 04 - dongge
   - 🇷🇺 俄罗斯 (Russia) 05 - dongge
+  - 🇷🇺 俄罗斯 (Russia) 06 - dongge
+  - 🇷🇺 俄罗斯 (Russia) 07 - dongge
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +97,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - dongge
   - 🇷🇺 俄罗斯 (Russia) 04 - dongge
   - 🇷🇺 俄罗斯 (Russia) 05 - dongge
+  - 🇷🇺 俄罗斯 (Russia) 06 - dongge
+  - 🇷🇺 俄罗斯 (Russia) 07 - dongge
 rules:
 - MATCH,PROXIES
