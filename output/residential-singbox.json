@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - dongge",
-        "🇹🇭 TH 02 - dongge"
+        "🇩🇪 德国 (Germany) 01 (家宽) - dongge"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - dongge",
-        "🇹🇭 TH 02 - dongge"
+        "🇩🇪 德国 (Germany) 01 (家宽) - dongge"
       ],
       "url": "https://www.google.com/generate_204"
     },
